@@ -1,0 +1,142 @@
+.headerContainer {
+  background-color: #6f5737;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 1vmin);
+  color: white;
+  padding: 0px 15px;
+
+}
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #bc8d4d;
+  min-height: 65vh;
+}
+.footerContainer{
+  background-color: #6f5737;
+  height: 90px;
+ 
+}
+.catalogButton{
+  font-size: 4vh;
+  color: #000000;
+  margin: 10px;
+
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 0px 1px #869f2b;
+  background: #e5e098;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.catalogButton:hover{
+  background: #dbd472;
+}
+.headerStash{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin-right: 10px;
+  width: 150px;
+}
+.headerIcon{
+  height: 50px;
+  width: 70px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.headerBasket{
+  background-image: url("../assets/images/basket.png");
+
+}
+.headerFavorite{
+  background-image: url("../assets/images/favorite.png");
+}
+.headerIcon:hover{
+  scale: 1.1;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 70vw;
+  height: 80vh;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.sliderTrack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.sliderImage {
+  position: absolute;
+  width: 60%;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  height: auto;
+}
+
+.sliderImage.active {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  z-index: 2;
+}
+
+.sliderImage.left {
+  transform: translateX(-120%) scale(0.8);
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.sliderImage.right {
+  transform: translateX(120%) scale(0.8);
+  opacity: 0.6;
+  z-index: 1;
+}
+
+
+.sliderImage.hidden {
+  transform: translateX(200%);
+  opacity: 0;
+  z-index: 0;
+}
+
+.sliderButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 3;
+}
+
+.sliderButton:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.sliderButton:first-of-type {
+  left: 10px;
+}
+
+.sliderButton:last-of-type {
+  right: 10px;
+}
