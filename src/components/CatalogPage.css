@@ -1,0 +1,21 @@
+.catalogContainer{
+    height: 60vh;
+    margin: 50px auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img{
+    width: 12vw;
+    height: 20vh;
+    border: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.productContainer{
+    height: 180px;
+}

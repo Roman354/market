@@ -1,13 +1,12 @@
-import styles from './Header.module.css';
+import './HomePage.css';
 
 export default function Header(): JSX.Element{
     return(
-        <header className={styles.headerContainer}>
-            <div>Ваш город: <div>СПБ</div></div>
-            <h1>My-test-Shop-Name</h1>
-            <div>
-                <div>favorite</div>
-                <div>basket</div>
+        <header className="headerContainer">
+            <h1>My-test-Shop</h1>
+            <div className="headerStash">
+                <div className="headerIcon headerBasket"></div>
+                <div className="headerIcon headerFavorite"></div>
             </div>
         </header>
     )
