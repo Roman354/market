@@ -1,4 +1,32 @@
 .App {
   text-align: center;
 }
+:root {
+  --scrollbar-track: #F5EAD6; /* Светло-бежевый */
+  --scrollbar-thumb: #C4A484; /* Тёплый какао */
+  --scrollbar-thumb-hover: #A78972; /* Ореховый */
+}
 
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* Для Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}

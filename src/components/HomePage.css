@@ -1,4 +1,4 @@
-.headerContainer {
+.headerContainer,.footerContainer {
   background-color: #6f5737;
   display: flex;
   align-items: center;
@@ -6,20 +6,18 @@
   font-size: calc(10px + 1vmin);
   color: white;
   padding: 0px 15px;
+  min-height: 10vh;
 
 }
 .mainContainer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   background-color: #bc8d4d;
-  min-height: 65vh;
+  min-height: 80vh;
 }
 .footerContainer{
-  background-color: #6f5737;
-  height: 90px;
- 
+  height: 86px;
 }
 .catalogButton{
   font-size: 4vh;
@@ -53,6 +51,7 @@
 }
 .headerBasket{
   background-image: url("../assets/images/basket.png");
+  position: relative;
 
 }
 .headerFavorite{
@@ -139,4 +138,32 @@
 
 .sliderButton:last-of-type {
   right: 10px;
+}
+.countOfProducts{
+  position: absolute;
+  right: -10px;
+  top: -5px;
+  background-color: #000000;
+  border-radius: 15px;
+  color: #ffffff;
+  /* padding: 2px 8px; */
+  font-size: 14px;
+  margin: 0;
+  padding: 2px 5px;
+  min-width:  16px;
+  min-height: 16px;
+}
+.gitHub{
+  background-image: url("../assets/images/gitHub.png");
+  width: 50px;
+  height: 70px;
+  display: inline-block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+}
+.gitHub:hover{
+  scale: 1.1;
 }

@@ -1,0 +1,139 @@
+.basketBackground{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #04040491;
+}
+.basketContainer{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 30%;
+    background: rgb(249, 250, 251);
+    z-index: 11;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.basketHeader{
+    height: 10%;
+    background-color: #6f5737;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.basketMain{
+    padding-top: 10px;
+    flex-direction: column;
+    display: flex;
+    height: 75%;
+    align-items: center;
+  
+    background-color: #bc8d4d;
+
+}
+.basketFooter{
+    height: 15%;
+    background-color: #6f5737;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonReturnToShop{
+    width: 80%;
+    padding: 10px;
+    background-color: rgb(47, 148, 38);
+ 
+    border-radius: 15px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+.buttonReturnToShop:hover,.registrationButton:hover{
+    background-color: rgb(58, 188, 46);
+    scale: 1.1;
+}
+.emptyBasketText{
+    font-size: 18px;
+}
+.productsBasketContainer{
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.imgInBasket {
+    width: 50%;
+    height: 70%;
+    border: 5px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.productBasketContainer{
+    box-shadow: inset 0px 0px 0px 2px #795626;
+    /* width: 10vw; */
+    height: 12vh;
+    display: flex;
+
+    width: 95%;
+    gap:5px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #efc183;
+    position: relative;
+}
+.imgBasketContainer{
+    width: 35%;
+    height: 95%;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    gap: 5px;
+
+}
+.nameProductInBasket{
+    margin: 0px 0px 0px 5px;
+    height: 20%;
+    width: 40%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.registrationButton{
+    background-color: rgb(47, 148, 38);
+  
+    width: 50%;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+.buttonsCountInBasket{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+.registrationContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.registrationPrice{
+    color: #fff;
+    font-size: 20px;
+    width: 35%;
+}
