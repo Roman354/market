@@ -1,10 +1,14 @@
 .App {
   text-align: center;
 }
+
 :root {
-  --scrollbar-track: #F5EAD6; /* Светло-бежевый */
-  --scrollbar-thumb: #C4A484; /* Тёплый какао */
-  --scrollbar-thumb-hover: #A78972; /* Ореховый */
+  --scrollbar-track: #F5EAD6;
+  /* Светло-бежевый */
+  --scrollbar-thumb: #C4A484;
+  /* Тёплый какао */
+  --scrollbar-thumb-hover: #A78972;
+  /* Ореховый */
 }
 
 
