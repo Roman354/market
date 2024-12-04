@@ -1,21 +1,90 @@
 .catalogContainer{
-    height: 60vh;
-    margin: 50px auto;
+    width: 100%;
+    overflow-y: auto;
+    min-height: 55vh;
+
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: center;
+    padding-bottom: 10px;
+    align-items: flex-start;
 }
 .img{
-    width: 12vw;
-    height: 20vh;
+    width: 80%;
+    height: 16vh;
     border: 10px;
-    cursor: pointer;
     border-radius: 10px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 .productContainer{
-    height: 180px;
+    box-shadow: inset 0px 0px 0px 2px #795626;
+    width: 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #efc183;
+    position: relative;
+    padding: 5px;
+    height: 250px;
+    margin-left: 10px;
+}
+.buttonInBasket{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #49d945;
+    border: none;
+    width: 70%;
+    cursor: pointer;
+}
+.countBasketContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.buttonChangeBasket{
+    font-size: 18px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    /* padding: 4px 8px; */
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: normal;
+ 
+}
+.buttonChangeBasket:hover{
+    scale: 1.1;
+    background-color: #49d945;
+}
+.countInBasket{
+    font-size: 20px;
+    width: 50%;
+    box-shadow: inset 0 0 0px 2px black;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 1px;
+}
+
+.defaultFavorite, .favorite{
+    width: 35px;
+    height: 35px;
+    /* border: 1px solid black; */
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    background-image: url("/src/assets/images/heart.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.favorite{
+    background-image: url("/src/assets/images/heartFav.png");
+}
+.defaultFavorite:hover,.favorite:hover{
+    scale: 1.1;
 }
