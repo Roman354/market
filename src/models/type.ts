@@ -1,10 +1,10 @@
-export type List ={
-    price:number,
+export type List = {
+    price: number,
     id: number,
-    weight:number,
-    name:string,
+    weight: number,
+    name: string,
     img: string,
-    count:number,
+    count: number,
     favorite: boolean,
-    unitOfMass:string,
+    unitOfMass: string,
 }

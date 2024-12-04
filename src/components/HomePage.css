@@ -1,4 +1,5 @@
-.headerContainer,.footerContainer {
+.headerContainer,
+.footerContainer {
   background-color: #6f5737;
   display: flex;
   align-items: center;
@@ -9,17 +10,20 @@
   min-height: 10vh;
 
 }
-.mainContainer{
+
+.mainContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #bc8d4d;
   min-height: 80vh;
 }
-.footerContainer{
+
+.footerContainer {
   height: 86px;
 }
-.catalogButton{
+
+.catalogButton {
   font-size: 4vh;
   color: #000000;
   margin: 10px;
@@ -31,17 +35,20 @@
   cursor: pointer;
   margin-top: 10px;
 }
-.catalogButton:hover{
+
+.catalogButton:hover {
   background: #dbd472;
 }
-.headerStash{
+
+.headerStash {
   display: flex;
   justify-content: space-evenly;
   gap: 20px;
   margin-right: 10px;
   width: 150px;
 }
-.headerIcon{
+
+.headerIcon {
   height: 50px;
   width: 70px;
   background-position: center;
@@ -49,15 +56,18 @@
   background-repeat: no-repeat;
   cursor: pointer;
 }
-.headerBasket{
+
+.headerBasket {
   background-image: url("../assets/images/basket.png");
   position: relative;
 
 }
-.headerFavorite{
+
+.headerFavorite {
   background-image: url("../assets/images/favorite.png");
 }
-.headerIcon:hover{
+
+.headerIcon:hover {
   scale: 1.1;
 }
 
@@ -79,7 +89,7 @@
   position: relative;
   width: 100%;
   height: 100%;
- 
+
 }
 
 .sliderImage {
@@ -139,7 +149,8 @@
 .sliderButton:last-of-type {
   right: 10px;
 }
-.countOfProducts{
+
+.countOfProducts {
   position: absolute;
   right: -10px;
   top: -5px;
@@ -150,10 +161,11 @@
   font-size: 14px;
   margin: 0;
   padding: 2px 5px;
-  min-width:  16px;
+  min-width: 16px;
   min-height: 16px;
 }
-.gitHub{
+
+.gitHub {
   background-image: url("../assets/images/gitHub.png");
   width: 50px;
   height: 70px;
@@ -164,6 +176,7 @@
   cursor: pointer;
 
 }
-.gitHub:hover{
+
+.gitHub:hover {
   scale: 1.1;
 }
