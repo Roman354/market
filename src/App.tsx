@@ -12,10 +12,7 @@ import { listOfProduct } from "./models/sources";
 function App(): JSX.Element {
   const [basketFlag, setBasketFlag] = useState<boolean>(false);
   const [favoriteFlag, setFavoriteFlag] = useState<boolean>(false);
-  const [listOfBasket, setListOfBasket] = useLocalStorage<List[]>(
-    "basket",
-    listOfProduct
-  );
+  const [listOfBasket, setListOfBasket] = useLocalStorage<List[]>("basket", listOfProduct);
   const [catalogFlag, setCatalogFlag] = useState<boolean>(false);
 
   return (
@@ -40,7 +37,7 @@ function App(): JSX.Element {
         <Basket
           setBasketFlag={setBasketFlag}
           listOfBasket={listOfBasket}
-          listOfProduct={listOfProduct}
+
           setListOfBasket={setListOfBasket}
         />
       ) : (
