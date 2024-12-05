@@ -5,7 +5,6 @@ interface BasketProps {
   setBasketFlag: React.Dispatch<React.SetStateAction<boolean>>;
   setListOfBasket: React.Dispatch<React.SetStateAction<List[]>>;
   listOfBasket: List[];
-  listOfProduct: List[];
 }
 
 export default function Basket(props: BasketProps) {
@@ -63,8 +62,13 @@ export default function Basket(props: BasketProps) {
               <button
                 className="registrationButton"
                 onClick={() => {
-                  props.setListOfBasket(props.listOfProduct);
+                  const tempArr = props.listOfBasket.map((item) => ({
+                    ...item,
+                    count: 0,
+                  }));
+                  props.setListOfBasket(tempArr);
                   props.setBasketFlag(false);
+                  window.location.reload();
                 }}
               >
                 Оформить заказ
